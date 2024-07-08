@@ -1,10 +1,10 @@
 {
   "name": "yselement",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "快速创建web components",
   "type": "module",
   "author": "MASON-SEA",
-  "main": "/dist/YSElement.es.js",
+  "main": "dist/YSElement.es.js",
   "license": "MIT",
   "repository": {
     "type": "git",
