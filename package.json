@@ -1,0 +1,30 @@
+{
+  "name": "yselement",
+  "version": "1.0.1",
+  "description": "快速创建web components",
+  "type": "module",
+  "author": "MASON-SEA",
+  "main": "/dist/YSElement.es.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MASON-SEA/YSElement.git"
+  },
+  "homepage": "https://github.com/MASON-SEA/YSElement",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "less": "^4.2.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1"
+  },
+  "keywords": [
+    "ui",
+    "web components",
+    "ys",
+    "element"
+  ]
+}

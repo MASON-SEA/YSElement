@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es2021",
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "jsx": "react",
+    "jsxFactory": "YSUI.createElement",
+    "jsxFragmentFactory": "YSUI.createFragment",
+    "experimentalDecorators": true,
+
+    "useDefineForClassFields": true,
+
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+  },
+  "include": ["src"]
+}
