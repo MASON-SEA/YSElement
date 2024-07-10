@@ -5,7 +5,6 @@ import style from "./index.less?inline";
 @custom_element('ysui-cache')
 export class Cache extends YSElement {
     init() {
-        console.log(style);
         this.import_css(style);
     }
 

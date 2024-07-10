@@ -1,19 +1,27 @@
 {
   "name": "yselement",
-  "version": "1.0.2",
+  "version": "1.1.1",
   "description": "快速创建web components",
   "type": "module",
   "author": "MASON-SEA",
-  "main": "dist/YSElement.es.js",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MASON-SEA/YSElement.git"
+    "url": "git+https://github.com/MASON-SEA/YSElement.git"
   },
   "homepage": "https://github.com/MASON-SEA/YSElement",
+  "bugs": {
+    "url": "https://github.com/MASON-SEA/YSElement/issues"
+  },
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build && tsc --emitDeclarationOnly",
     "preview": "vite preview"
   },
   "devDependencies": {

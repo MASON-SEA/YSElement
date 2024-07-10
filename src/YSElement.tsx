@@ -148,6 +148,7 @@ class YSElement extends HTMLElement {
             const descriptor = this.getPropertyDescriptor(name);
             Object.defineProperty(this.prototype, name, descriptor)
         }
+
         return properties
     }
 
@@ -269,7 +270,7 @@ class YSElement extends HTMLElement {
     }
 
     /**
-     * @description 生成css连接
+     * @description 生成css
      * @param cssContent 地址
      */
     import_css(cssContent: string) {
