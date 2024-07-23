@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "esnext",
+    "module": "es6",
+    "target": "es6",
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "jsx": "react",
