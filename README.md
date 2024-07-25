@@ -23,5 +23,5 @@
 ## Install
 
 ```bash
-npm install ysuid
+npm install yselement
 ```
