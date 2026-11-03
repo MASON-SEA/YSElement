@@ -232,16 +232,10 @@ class YSElement extends HTMLElement {
     const changed = this._changed.slice();
     this.custom_get_value();
 
-    if (changed.length === 1) {
-      const c = changed[0];
+    // One microtask, but call update per property so subclasses with
+    // targeted handlers (e.g. YSUI) keep working.
+    for (const c of changed) {
       this.update(c.name, c.oldValue, c.newValue);
-    } else {
-      // Multi-property batch: one render via update with aggregated hint
-      this.update(
-        changed.map((c) => c.name).join(","),
-        changed.map((c) => c.oldValue),
-        changed.map((c) => c.newValue)
-      );
     }
 
     this._dirty.clear();
